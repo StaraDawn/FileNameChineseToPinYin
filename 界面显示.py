@@ -3,7 +3,17 @@ from tkinter import filedialog  # 选择文件夹
 from PIL import Image, ImageTk  # 载入图片
 import tkinter.messagebox  # 弹窗
 import tkinter.simpledialog  # 弹出选择窗口
-import 界面接口
+
+
+class 界面显示输出接口(object):
+    def __init__(self):
+        self.接收类 = 0
+
+    def 初始化(self, 输入端):
+        self.接收类 = 输入端
+
+    def 输出开始运行(self, 输入的初始路径):
+        self.接收类.开始运行(输入的初始路径)
 
 
 class 窗口(object):
@@ -15,7 +25,7 @@ class 窗口(object):
         self.显示文本 = '请选择文件夹'  # 显示的文本
 
     文本标签 = 0  # 显示文本的界面
-    输出接口 = 界面接口.界面显示输出接口()
+    输出接口 = 界面显示输出接口()
 
     def 拖入文件夹(self):
         # 文件路径 = filedialog.askopenfilename()  # 调用 askopenfilename 函数选择文件
@@ -72,7 +82,6 @@ class 窗口(object):
         图片 = ImageTk.PhotoImage(img)  # 保存图片并设置图片大小
         图片标签 = tk.Label(窗口, image=图片, width=500, height=500)  # 创建一个标签显示图片
         图片标签.pack(fill="both", expand=True)  # 将标签填充整个窗口
-        # 图片标签.pack()
 
         self.文本标签 = tk.Label(图片标签, text=self.显示文本, width=70)
         self.文本标签.pack(side="top")
@@ -83,9 +92,5 @@ class 窗口(object):
         按钮2.pack(side="left")
         按钮 = tk.Button(窗口, text='3.开始运行', command=self.开始运行函数, bg="White", height=5, width=23)  # 创建按钮
         按钮.pack(side="right")
-        # 按钮.pack(side='bottom', fill="x")
-        # 按钮.pack()  # 将按钮放入窗口
-
-        # 窗口.bind("<Button-1>", 拖入文件夹)    # 绑定拖入文件夹事件
 
         窗口.mainloop()  # 进入循环

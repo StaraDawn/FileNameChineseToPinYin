@@ -1,0 +1,7 @@
+    name = "FileNameChineseToPinYin",
+    version = 0.1,
+    long_descripition = 循环遍历单个文件夹下所有子文件夹和文件,批量复制到同目录下另一个改名后的文件夹中.,
+    author = '夊忆',
+    author_email = '2822526778@qq.com',
+    url = 'https://github.com/StaraDawn/FileNameChineseToPinYin',
+

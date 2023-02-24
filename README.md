@@ -25,10 +25,11 @@
 ###### 是Windows下运行的,其他系统没测过,可能不行
 
 ## 发行版本
-下载地址为https://github.com/StaraDawn/FileNameChineseToPinYin/releases/tag/%E5%8E%8B%E7%BC%A9%E5%8C%85
-下载后解压,然后直接运行[中文转拼音.exe]即可
+###### 下载地址为https://github.com/StaraDawn/FileNameChineseToPinYin/releases/tag/%E5%8E%8B%E7%BC%A9%E5%8C%85
+###### 下载后解压,然后直接运行[中文转拼音.exe]即可
 
 ## 关于功能
- 循环遍历单个文件夹下所有子文件夹和文件,批量复制到同目录下另一个改名后的文件夹中.
-(大佬们,萌新随便写的,如果做的不好勿喷)
-可能会有bug,最好按照步骤谨慎操作
+###### 循环遍历单个文件夹下所有子文件夹和文件,批量复制到同目录下另一个改名后的文件夹中.
+###### 可能会有未知bug
+###### (萌新随便写的,如果做的不好勿喷)
+
